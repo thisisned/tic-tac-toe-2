@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  background-color: #90a9d1;
+}
+
+#container {
+  margin: 40px auto 20px;
+  width: 350px;
+  text-align: center;
+  position: relative;
+}
+
+.option {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.difficultyChoice {
+  visibility: hidden;
+}
+
+.heading {
+  margin: 20% 0 10% 0;
+}
+
+.button {
+  display: inline-block;
+  height: 75px;
+  width: 75px;
+  line-height: 75px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+#board {
+  display: flex;
+  width: 350px;
+  flex-wrap: wrap;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.cell {
+  font-size: 3em;
+  font-weight: 700;
+  flex: 0 0 100px;
+  height: 100px;
+  line-height: 100px;
+  margin: 5px;
+  background-color: #b8c6e0;
+}
+
+span {
+  opacity: 0;
+}
+
+.winCell {
+  background-color: #5495ff;
+  color: white;
+    -webkit-transition: background-color 0.5s, color 0.5s;
+    -moz-transition: background-color 0.5s, color 0.5s;
+    -o-transition: background-color 0.5s, color 0.5s;
+    -khtml-transition: background-color 0.5s, color 0.5s;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.tieCell {
+  background-color: #1c3c70;
+  color: white;
+    -webkit-transition: background-color 0.5s, color 0.5s;
+    -moz-transition: background-color 0.5s, color 0.5s;
+    -o-transition: background-color 0.5s, color 0.5s;
+    -khtml-transition: background-color 0.5s, color 0.5s;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+#endOpts {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#endOpts div {
+  display: inline-block;
+}
+
+#message {
+  font-size: 1.5em;
+  width: 150px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+#reset, #playAgain {
+  border-radius: 20px;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+#reset {
+  float: left;
+  line-height: 40px;
+}
+
+#playAgain {
+  float: right;
+}
+
+.cell, .button, #reset, #playAgain {
+  cursor: pointer;
+}
+
+.button, #reset, #playAgain {
+  background-color: #556687;
+  color: #DDD;
+}

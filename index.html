@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div id="container">
+  <div class="option markerChoice">
+    <div class="heading">Choose your guy:</div>
+    <div class="button markerButton">X</div>
+    <div class="button markerButton">O</div>
+  </div>
+  <div class = "option difficultyChoice">
+    <div class="heading">Other guy difficulty:</div>
+    <div class="button difficultyButton" id="easyAI">Dumb</div>
+    <div class="button difficultyButton" id="hardAI">Smart</div>
+  </div>
+  <div id="board">
+    <div class="cell" id="1"></div>
+    <div class="cell" id="2"></div>
+    <div class="cell" id="3"></div>
+    <div class="cell" id="4"></div>
+    <div class="cell" id="5"></div>
+    <div class="cell" id="6"></div>
+    <div class="cell" id="7"></div>
+    <div class="cell" id="8"></div>
+    <div class="cell" id="9"></div>
+  </div>
+</div>
+<div id="endOpts">
+  <div id="reset">Reset</div>
+  <div id="message"></div>
+  <div id="playAgain">Play Again</div>
+</div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src="js/index.js"></script>
+
+</body>
+</html>
